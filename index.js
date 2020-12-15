@@ -14,7 +14,7 @@ const searchURL = (stateCode, maxResults) => {
     limit: maxResults
   };
   const queryString = formatQueryParams(params)
-  return `https://developer.nps.gov/api/v1/parks?stateCode=${stateCode}&limit=${maxResults}&api_key=kyctTpPef5HDCWcPI0sYLcBXg8MZISha4fnlzngQ`;
+  return `https://cors-anywhere.herokuapp.com/https://developer.nps.gov/api/v1/parks?stateCode=${stateCode}&limit=${maxResults}&api_key=kyctTpPef5HDCWcPI0sYLcBXg8MZISha4fnlzngQ`;
 }
 
 function displayResults(responseJson, maxResults) {
