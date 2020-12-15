@@ -60,7 +60,7 @@ function watchForm() {
     event.preventDefault();
     const searchTerm = $('#js-search-term').val();
     const maxResults = $('#js-max-results').val();
-    getNews(searchTerm, maxResults);
+    getParks(searchTerm, maxResults);
   });
 }
 
